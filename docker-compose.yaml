@@ -1,0 +1,8 @@
+services:
+  monit:
+    image: extrafein/monit
+    build:
+      context: https://github.com/extrafein/ocrmypdf-auto.git
+      dockerfile: Dockerfile
+      args:
+        ARCHITECTURE: linux-x64-musl
