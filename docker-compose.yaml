@@ -3,6 +3,9 @@ services:
     image: extrafein/monit
     build:
       context: https://github.com/extrafein/monit.git
-      dockerfile: Dockerfile
       args:
-        ARCHITECTURE: linux-x64-musl
+        # you can find supported/prepared architektures on the monit homepage
+        # https://mmonit.com/monit/
+        # see pre compiled binaries
+        architecture: linux-x64-musl
+    restart: always
