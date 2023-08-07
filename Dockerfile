@@ -18,7 +18,7 @@ WORKDIR /app
 
 # evaluate latest monit version and download it
 RUN LATEST_VERSION=$(curl -s "https://mmonit.com/monit/dist/binary/" | grep -oE '[0-9]+\.[0-9]+\.[0-9]+' | sort -V | tail -n1)
-RUN curl -sL "https://mmonit.com/monit/dist/binary/${latest_version}/monit-${latest_version}-${architecture}.tar.gz" | tar -xz --strip-components=1
+RUN curl -sL "https://mmonit.com/monit/dist/binary/$latest_version/monit-$latest_version-$architecture.tar.gz" | tar -xz --strip-components=1
 
 # expose port for monit
 EXPOSE 2812
