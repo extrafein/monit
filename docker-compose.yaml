@@ -7,5 +7,5 @@ services:
         # you can find supported/prepared architektures on the monit homepage
         # https://mmonit.com/monit/
         # see pre compiled binaries
-        architecture: linux-x64-musl
+        architecture: linux-x64
     restart: always
